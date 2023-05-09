@@ -1,0 +1,160 @@
+<html>
+<head>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+        heading {
+            text-align: center;
+            height: 100px;
+            position: relative;
+        }
+        h2 {
+            text-align: center;
+        }
+        body {
+            padding: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            text-align: right;
+        }
+        table tr {
+            border-bottom: 1px solid
+        }
+        table th, table td {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1><strong><center>REPORT</center></strong></h1>
+<br>
+
+<img align="left" src='portCounts.svg' width="600">
+<img align="right" src='Risk.svg' width="600">
+<br>
+
+<!--<h2> Quick Scan </h2>-->
+<style type="text/css">
+</style>
+<table id="T_ca382">
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_ca382_level0_col0" class="col_heading level0 col0" >method</th>
+      <th id="T_ca382_level0_col1" class="col_heading level0 col1" >uri</th>
+      <th id="T_ca382_level0_col2" class="col_heading level0 col2" >description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_ca382_level0_row0" class="row_heading level0 row0" >0</th>
+      <td id="T_ca382_row0_col0" class="data row0 col0" >GET</td>
+      <td id="T_ca382_row0_col1" class="data row0 col1" >/</td>
+      <td id="T_ca382_row0_col2" class="data row0 col2" >The anti-clickjacking X-Frame-Options header is not present.</td>
+    </tr>
+    <tr>
+      <th id="T_ca382_level0_row1" class="row_heading level0 row1" >1</th>
+      <td id="T_ca382_row1_col0" class="data row1 col0" >GET</td>
+      <td id="T_ca382_row1_col1" class="data row1 col1" >/</td>
+      <td id="T_ca382_row1_col2" class="data row1 col2" >The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS</td>
+    </tr>
+    <tr>
+      <th id="T_ca382_level0_row2" class="row_heading level0 row2" >2</th>
+      <td id="T_ca382_row2_col0" class="data row2 col0" >GET</td>
+      <td id="T_ca382_row2_col1" class="data row2 col1" >/</td>
+      <td id="T_ca382_row2_col2" class="data row2 col2" >The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type</td>
+    </tr>
+    <tr>
+      <th id="T_ca382_level0_row3" class="row_heading level0 row3" >3</th>
+      <td id="T_ca382_row3_col0" class="data row3 col0" >GET</td>
+      <td id="T_ca382_row3_col1" class="data row3 col1" >/</td>
+      <td id="T_ca382_row3_col2" class="data row3 col2" >Server may leak inodes via ETags, header found with file /, inode: 29cd, size: 5e5b8043051e0, mtime: gzip</td>
+    </tr>
+    <tr>
+      <th id="T_ca382_level0_row4" class="row_heading level0 row4" >4</th>
+      <td id="T_ca382_row4_col0" class="data row4 col0" >OPTIONS</td>
+      <td id="T_ca382_row4_col1" class="data row4 col1" >/</td>
+      <td id="T_ca382_row4_col2" class="data row4 col2" >Allowed HTTP Methods: GET, POST, OPTIONS, HEAD</td>
+    </tr>
+    <tr>
+      <th id="T_ca382_level0_row5" class="row_heading level0 row5" >5</th>
+      <td id="T_ca382_row5_col0" class="data row5 col0" >GET</td>
+      <td id="T_ca382_row5_col1" class="data row5 col1" >///etc/hosts</td>
+      <td id="T_ca382_row5_col2" class="data row5 col2" >///etc/hosts: The server install allows reading of any system file by adding an extra '/' to the URL.</td>
+    </tr>
+    <tr>
+      <th id="T_ca382_level0_row6" class="row_heading level0 row6" >6</th>
+      <td id="T_ca382_row6_col0" class="data row6 col0" >GET</td>
+      <td id="T_ca382_row6_col1" class="data row6 col1" >/server-status</td>
+      <td id="T_ca382_row6_col2" class="data row6 col2" >/server-status: This reveals Apache information. Comment out appropriate line in the Apache conf file or restrict access to allowed sources.</td>
+    </tr>
+    <tr>
+      <th id="T_ca382_level0_row7" class="row_heading level0 row7" >7</th>
+      <td id="T_ca382_row7_col0" class="data row7 col0" >GET</td>
+      <td id="T_ca382_row7_col1" class="data row7 col1" >/wp-content/themes/twentyeleven/images/headers/server.php?filesrc=/etc/hosts</td>
+      <td id="T_ca382_row7_col2" class="data row7 col2" >/wp-content/themes/twentyeleven/images/headers/server.php?filesrc=/etc/hosts: A PHP backdoor file manager was found.</td>
+    </tr>
+    <tr>
+      <th id="T_ca382_level0_row8" class="row_heading level0 row8" >8</th>
+      <td id="T_ca382_row8_col0" class="data row8 col0" >GET</td>
+      <td id="T_ca382_row8_col1" class="data row8 col1" >/wordpresswp-content/themes/twentyeleven/images/headers/server.php?filesrc=/etc/hosts</td>
+      <td id="T_ca382_row8_col2" class="data row8 col2" >/wordpresswp-content/themes/twentyeleven/images/headers/server.php?filesrc=/etc/hosts: A PHP backdoor file manager was found.</td>
+    </tr>
+    <tr>
+      <th id="T_ca382_level0_row9" class="row_heading level0 row9" >9</th>
+      <td id="T_ca382_row9_col0" class="data row9 col0" >GET</td>
+      <td id="T_ca382_row9_col1" class="data row9 col1" >/wp-includes/Requests/Utility/content-post.php?filesrc=/etc/hosts</td>
+      <td id="T_ca382_row9_col2" class="data row9 col2" >/wp-includes/Requests/Utility/content-post.php?filesrc=/etc/hosts: A PHP backdoor file manager was found.</td>
+    </tr>
+    <tr>
+      <th id="T_ca382_level0_row10" class="row_heading level0 row10" >10</th>
+      <td id="T_ca382_row10_col0" class="data row10 col0" >GET</td>
+      <td id="T_ca382_row10_col1" class="data row10 col1" >/wordpresswp-includes/Requests/Utility/content-post.php?filesrc=/etc/hosts</td>
+      <td id="T_ca382_row10_col2" class="data row10 col2" >/wordpresswp-includes/Requests/Utility/content-post.php?filesrc=/etc/hosts: A PHP backdoor file manager was found.</td>
+    </tr>
+    <tr>
+      <th id="T_ca382_level0_row11" class="row_heading level0 row11" >11</th>
+      <td id="T_ca382_row11_col0" class="data row11 col0" >GET</td>
+      <td id="T_ca382_row11_col1" class="data row11 col1" >/wp-includes/js/tinymce/themes/modern/Meuhy.php?filesrc=/etc/hosts</td>
+      <td id="T_ca382_row11_col2" class="data row11 col2" >/wp-includes/js/tinymce/themes/modern/Meuhy.php?filesrc=/etc/hosts: A PHP backdoor file manager was found.</td>
+    </tr>
+    <tr>
+      <th id="T_ca382_level0_row12" class="row_heading level0 row12" >12</th>
+      <td id="T_ca382_row12_col0" class="data row12 col0" >GET</td>
+      <td id="T_ca382_row12_col1" class="data row12 col1" >/wordpresswp-includes/js/tinymce/themes/modern/Meuhy.php?filesrc=/etc/hosts</td>
+      <td id="T_ca382_row12_col2" class="data row12 col2" >/wordpresswp-includes/js/tinymce/themes/modern/Meuhy.php?filesrc=/etc/hosts: A PHP backdoor file manager was found.</td>
+    </tr>
+    <tr>
+      <th id="T_ca382_level0_row13" class="row_heading level0 row13" >13</th>
+      <td id="T_ca382_row13_col0" class="data row13 col0" >GET</td>
+      <td id="T_ca382_row13_col1" class="data row13 col1" >/assets/mobirise/css/meta.php?filesrc=</td>
+      <td id="T_ca382_row13_col2" class="data row13 col2" >/assets/mobirise/css/meta.php?filesrc=: A PHP backdoor file manager was found.</td>
+    </tr>
+    <tr>
+      <th id="T_ca382_level0_row14" class="row_heading level0 row14" >14</th>
+      <td id="T_ca382_row14_col0" class="data row14 col0" >GET</td>
+      <td id="T_ca382_row14_col1" class="data row14 col1" >/login.cgi?cli=aa%20aa%27cat%20/etc/hosts</td>
+      <td id="T_ca382_row14_col2" class="data row14 col2" >/login.cgi?cli=aa%20aa%27cat%20/etc/hosts: Some D-Link router remote command execution.</td>
+    </tr>
+    <tr>
+      <th id="T_ca382_level0_row15" class="row_heading level0 row15" >15</th>
+      <td id="T_ca382_row15_col0" class="data row15 col0" >GET</td>
+      <td id="T_ca382_row15_col1" class="data row15 col1" >/shell?cat+/etc/hosts</td>
+      <td id="T_ca382_row15_col2" class="data row15 col2" >/shell?cat+/etc/hosts: A backdoor was identified.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<p></p>
+<br>
+<center>
+    <img src='alertNameInstancesPlot.svg' width="600"></center></center></br>
+<p></p>
+
+
+</body>
+</html>
